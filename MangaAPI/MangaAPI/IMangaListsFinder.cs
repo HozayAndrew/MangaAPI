@@ -6,7 +6,7 @@ namespace MangaAPI
 {
     interface IMangaListsFinder
     {
-        List<Manga> GetMangaList(int mangaCount);
+        List<Manga> GetTopMangaList();
         List<Manga> GetMangaList(int mangaCount, Category category);
     }
 }

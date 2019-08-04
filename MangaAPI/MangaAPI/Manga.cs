@@ -8,7 +8,6 @@ namespace MangaAPI
     {
         public string Name { get; internal set; }
         public string Url { get; internal set; }
-        public string Description { get; internal set; }
         public string PreviewImageUrl { get; internal set; }
         public string Rating { get; internal set; }
         public string State { get; internal set; }

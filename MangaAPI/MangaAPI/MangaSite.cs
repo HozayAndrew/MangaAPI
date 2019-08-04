@@ -27,6 +27,9 @@ namespace MangaAPI
                 case MangaSites.ReadManga:
                     BaseUrl = "http://readmanga.me";
                     break;
+                case MangaSites.MintManga:
+                    BaseUrl = "http://mintmanga.com";
+                    break;
             }
         }
 
@@ -35,6 +38,7 @@ namespace MangaAPI
             switch (Site)
             {
                 case MangaSites.ReadManga:
+                case MangaSites.MintManga:
                     MangaListUrl = BaseUrl + "/list";
                     break;
             }
@@ -45,6 +49,7 @@ namespace MangaAPI
             switch(Site)
             {
                 case MangaSites.ReadManga:
+                case MangaSites.MintManga:
                     Parser = new ReadMeMangaParser();
                     break;
             }
@@ -53,6 +58,7 @@ namespace MangaAPI
 
     public enum MangaSites
     {
-        ReadManga
+        ReadManga, 
+        MintManga
     }
 }

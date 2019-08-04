@@ -15,22 +15,34 @@ namespace MangaAPI
 
         public void FindManga(string name)
         {
-
+            throw new NotImplementedException();
         }
 
         public List<Manga> GetMangaList(int mangaCount, Category category)
         {
-            return _site.Parser.GetMangeList(_site.BaseUrl, _site.MangaListUrl);
+            throw new NotImplementedException();
         }
 
-        public List<Manga> GetMangaList(int mangaCount)
+        /// <summary>
+        /// get 1400 top manga
+        /// </summary>
+        /// <returns></returns>
+        public List<Manga> GetTopMangaList()
         {
-            return _site.Parser.GetMangeList(_site.BaseUrl, _site.MangaListUrl);
+            List<Manga> mangaList = new List<Manga>();
+
+            for (int i = 0; i < 10; i++)
+            {
+                var currentPageManga = _site.Parser.GetMangeList(_site.BaseUrl, _site.MangaListUrl + $"?offset={i * 70}");
+                mangaList.AddRange(currentPageManga);
+            }
+
+            return mangaList;
         }
 
         public void RanodmManga()
         {
-
+            throw new NotImplementedException();
         }
     }
 }
