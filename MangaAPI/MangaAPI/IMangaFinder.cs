@@ -7,6 +7,6 @@ namespace MangaAPI
     interface IMangaFinder
     {
         void FindManga(string name);
-        void RanodmManga();
+        void RandomManga();
     }
 }
