@@ -85,7 +85,7 @@ namespace MangaDownloaderCLI
                 else
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Manga had not finded");
+                    Console.WriteLine("Manga not found");
                     Console.ForegroundColor = ConsoleColor.Black;
                 }
             }
