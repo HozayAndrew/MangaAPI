@@ -40,7 +40,7 @@ namespace MangaAPI
             return mangaList;
         }
 
-        public void RanodmManga()
+        public void RandomManga()
         {
             throw new NotImplementedException();
         }
